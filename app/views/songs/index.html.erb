@@ -2,7 +2,11 @@
   <ul>
 <%@songs.each do |song| %>
 
+<<<<<<< HEAD
     <li><%= link_to "#{song.artist_name} - #{song.title}", song_path(song) %></li>
+=======
+    <li><%= song.artist_name %> - <%= link_to song.title, song_path(song) %></li>
+>>>>>>> d0c2ae317f9960f8b764aba67175d796b2826b92
 
   <%end%>
   </ul>
